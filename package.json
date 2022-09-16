@@ -1,0 +1,16 @@
+{
+  "name": "ylgy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node yang.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
