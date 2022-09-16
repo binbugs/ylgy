@@ -5,7 +5,8 @@ const repeat_time = 10;
 const request_header = {
     "Host": "cat-match.easygame2021.com",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33",
-    "t": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQ0MTUyNTcsIm5iZiI6MTY2MzMxMzA1NywiaWF0IjoxNjYzMzExMjU3LCJqdGkiOiJDTTpjYXRfbWF0Y2g6bHQxMjM0NTYiLCJvcGVuX2lkIjoiIiwidWlkIjozMjAxNjc5NywiZGVidWciOiIiLCJsYW5nIjoiIn0.ZRxYhWLLJ-dO9NoWj0WR3MhZSxXNA1CqyPD4g43Sk_U"
+    // 这里的t须抓包修改成自己的
+    "t": ""
 }
 let success_num = 0;
 async function run() {
@@ -22,6 +23,7 @@ async function run() {
         console.log(`服务器错误`);
       }
     })
+    //TODO: 官方加了限流可能会超时
     .catch()
 }
 
